@@ -1,0 +1,27 @@
+<html>
+<body>
+<script> 
+function countDuplicates(arr) {
+    var count = 0;
+    var uniqueValues = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        if (uniqueValues.indexOf(arr[i]) === -1) {
+            uniqueValues.push(arr[i]);
+        } else {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+// Example usage:
+var myArray = [1, 2, 3, 4, 2, 5, 6, 1, 7, 8, 9, 2];
+var result = countDuplicates(myArray);
+document.write(" array: " + myArray);
+document.write( "<br>");
+document.write("Number of duplicate values in the array: " + result);
+</script>
+</body>
+</html>

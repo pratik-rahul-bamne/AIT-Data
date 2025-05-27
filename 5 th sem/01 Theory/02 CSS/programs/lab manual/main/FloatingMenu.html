@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floation Menu</title>
+	<script type="text/javascript">
+		function MyFunction()
+		{
+			var select=document.getElementById("student");
+			var x =document.getElementById("mySelect").value;
+			if(x=="Select Subject")
+			{
+				alert("Please select Subject");
+			}else
+			{
+				 document.getElementById("demo").innerHTML="You selected:"+x;
+			}
+			}
+		
+	</script>
+</head>
+<body>
+	<br><br><br>
+	<p>Floation menu.Scroll Down</p>
+<select id="mySelect" style="position: fixed;">
+<option value="select subject">Select Subject</option>	
+<option value="OOP">OOP</option>
+<option value="CGR">CGR</option>
+<option value="DBMS">DBMS</option>
+<option value="DSU">DSU</option>
+<option value="DTE">DTE</option>
+</select>
+<br><br>
+<input type="button" value="Submit" onclick="MyFunction()">
+<br>
+<p id="demo"></p>
+<br><br><br><br><br><br><br><br>
+</body>
+</html>

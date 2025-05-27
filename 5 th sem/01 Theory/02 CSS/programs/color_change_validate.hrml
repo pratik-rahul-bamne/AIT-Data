@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Information</title>
+    <style>
+        /* Add some basic styling for better visibility */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function processForm() {
+            // Get values from textboxes
+            var firstName = document.getElementById("firstName").value;
+            var middleName = document.getElementById("middleName").value;
+            var lastName = document.getElementById("lastName").value;
+
+            // Disable textboxes and change color to RED
+            document.getElementById("firstName").disabled = true;
+            document.getElementById("middleName").disabled = true;
+            document.getElementById("lastName").disabled = true;
+
+            document.getElementById("firstName").style.color = "red";
+            document.getElementById("middleName").style.color = "red";
+            document.getElementById("lastName").style.color = "red";
+
+            // Construct mailID and display as message
+            var mailID = firstName.toLowerCase() + '.' + lastName.toLowerCase() + "@msbte.com";
+            alert("Mail ID: " + mailID);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>User Information</h2>
+
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <button type="button" onclick="processForm()">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Event Bubbling</title>
+    </head>
+    <body>
+       <div id="p1">
+            <button id="btn1"> I am child button</button>
+       </div>
+
+       <script type="text/javascript">
+        var parent=document.querySelector("#p1");
+        parent.addEventListener("click",function(){
+            document.write("Parent is invoked");
+        });
+        
+        var child=document.querySelector("#btn1");
+        child.addEventListener("click",function(){
+            document.write("child is invoked");
+        });
+       </script>
+    </body>
+</html>
+
+
+

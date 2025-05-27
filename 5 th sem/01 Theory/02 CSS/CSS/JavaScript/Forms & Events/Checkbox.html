@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>checkbox Event</title>
+        <script type="text/javascript">
+            function selectall()
+            {
+                var ele=document.getElementsByName("chk");
+                for(var i=0; i<ele.length;i++)
+                 {
+                     if(ele[i].type=="checkbox")
+                     ele[i].checked=true;
+                 }   
+            }
+           
+            function deselectall()
+            {
+                 var ele=document.getElementsByName("chk");
+                for(var i=0;i<ele.length;i++)
+                {
+                    if(ele[i].type=="checkbox")
+                    ele[i].checked=false;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="checkbox"  name="chk" value="OSY">OSY<br>
+        <input type="checkbox"  name="chk" value="CSS">CSS<br>
+        <input type="checkbox"  name="chk" value="AJP">AJP<br>
+        <input type="checkbox"  name="chk" value="STE">STE<br><br>
+        <input type="button" onclick="selectall()" value="Select All">
+        <input type="button" onclick="deselectall()" value="Deselect All">
+    </body>
+</html>

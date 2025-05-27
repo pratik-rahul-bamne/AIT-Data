@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books Information</title>
+    <script>
+        function displayDiscount(bookName, discount) {
+            document.getElementById("discountInfo").innerHTML = "Discount for " + bookName + ": " + discount + "%";
+        }
+
+        function clearDiscount() {
+            document.getElementById("discountInfo").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Books Information</h2>
+
+    <table border="1">
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+        <tr onmouseover="displayDiscount('Book 1', 10)" onmouseout="clearDiscount()">
+            <td>Book 1</td>
+            <td>Author 1</td>
+            <td>$20</td>
+        </tr>
+        <tr onmouseover="displayDiscount('Book 2', 15)" onmouseout="clearDiscount()">
+            <td>Book 2</td>
+            <td>Author 2</td>
+            <td>$25</td>
+        </tr>
+        <!-- Add more rows as needed -->
+
+    </table>
+
+    <p id="discountInfo"></p>
+</body>
+
+</html>

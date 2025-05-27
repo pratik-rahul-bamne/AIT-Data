@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulating form Elements</title>
+	<script type="text/javascript">
+		function assign()
+		{
+			with(documents.forms.frm1)
+			{
+				if(year.value.length>0 && branch.value.length>0)
+				{
+					course.value=year.value+branch.value;	
+				}
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<form name="frm1" action="" method="post">
+		 Year<input type="text" name="year"/><br>
+		Branch<input type="text" name="branch" v/><br>
+		Course<input type="hidden" name="course"/><br>
+		<input type="submit" name="submit" value="Submit" onclick="assign()"/>
+		<input type="reset" name="reset" value="Reset"/>
+	</form>
+</body>
+</html>

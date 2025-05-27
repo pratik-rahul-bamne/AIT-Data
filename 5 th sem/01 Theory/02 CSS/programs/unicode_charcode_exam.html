@@ -1,0 +1,24 @@
+<!-- Full HTML code using document.write syntax -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Character to Unicode and Vice-Versa</title>
+  </head>
+  <body>
+    <script>
+      // Convert character to Unicode
+      function charToUnicode(char) {
+        return char.charCodeAt(0).toString(16);
+      }
+
+      // Convert Unicode to character
+      function unicodeToChar(unicode) {
+        return String.fromCharCode(parseInt(unicode, 16));
+      }
+
+      // Example usage
+      document.write("The Unicode for 'A' is: " + charToUnicode('A') + "<br>");
+      document.write("The character for Unicode '0041' is: " + unicodeToChar('0041'));
+    </script>
+  </body>
+</html>

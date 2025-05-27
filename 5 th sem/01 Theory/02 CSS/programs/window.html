@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Window Properties</title>
+    <script>
+        function displayWindowProperties() {
+            // Get all properties of the window object
+            var properties = [];
+            for (var prop in window) {
+                properties.push(prop);
+            }
+
+            // Display properties in an alert
+            alert("Window Properties:\n" + properties.join('\n'));
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Click the button to display window properties</h2>
+    <button onclick="displayWindowProperties()">Show Properties</button>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+<body>
+ <label for="contries">Choose a Country:</label>
+ <select name="contries" id="contries" class="select"
+onchange="changecontry()">
+ <option value="india">India</option>
+ <option value="japan">Japan</option>
+ <option value="usa">USA</option>
+ </select>
+
+<script>
+changecontry= () => {
+    var contries = document.getElementById("contries").value;
+ switch(contries)
+{
+ case "india":
+ var myWindow=window.open("ROSE.jpg","MsgWindow",
+"width=200,height=100");
+ break;
+ case "japan":
+ var myWindow=window.open("Jasmine.jpg","MsgWindow",
+"width=200,height=100");
+ break;
+ case "usa":
+ var myWindow=window.open("Sunfler.jpeg","MsgWindow",
+"width=200,height=100");
+ break;
+ default:
+    /*document.getElementById("city-name").innerHTML = "Nill";
+ document.getElementById("city-description").innerHTML = "Nill";
+ document.getElementById("city-image").src = "";*/
+ break;
+ }
+}</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+function setBackgroundColor() {
+
+ var color = prompt("Enter a color (e.g. 'red', '#ff0000')");
+
+ var newWindow = window.open();
+
+ newWindow.document.body.style.backgroundColor = color;
+
+}
+
+</script>
+</head>
+<body>
+    
+   
+  <button onclick="setBackgroundColor()">Change background color</button>
+   
+</body>
+</html>

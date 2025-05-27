@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Cookies</title>
+    </head>
+    <body>
+        <input type="button" value="setCookie" onclick="setCookie()">
+        <input type="button" value="getCookie" onclick="getCookie()">
+        <script>
+            function setCookie()
+            {
+                document.cookie="Username=AIT";
+            }
+
+            function getCookie()
+            {
+                if(document.cookie.length!=0)
+                {
+                    alert(document.cookie);
+                }
+                else
+                {
+                    alert("Cookie is not available");
+                }
+            }
+        </script>      
+    </body>
+</html>

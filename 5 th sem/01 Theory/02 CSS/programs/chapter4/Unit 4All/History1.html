@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>History</title>
+	<script type="text/javascript">
+		
+		function displayFunction()
+		{
+			var a=window.history.back();
+			document.getElementById("para").innerHTML="History:"+ a;
+			/*document.getElementById("para").innerHTML="The Protocol of the web page is :"+window.location.protocol;
+			
+			document.getElementById("para").innerHTML="The host of the web page is :"+window.location.hostname;*/
+		
+		}
+	</script>
+</head>
+<body>
+<p>Click to get The History of the Web Page</p>
+<input type="button" value="Previous " onclick="displayFunction()">
+<p id="para"></p>
+</body>
+</html>

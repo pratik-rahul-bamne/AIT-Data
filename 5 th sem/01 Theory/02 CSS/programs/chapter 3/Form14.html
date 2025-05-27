@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accessing form attributes</title>
+	
+	<script type="text/javascript">
+		function display()
+		{
+			alert("value="+document.forms.entry.Cname.value)
+		}
+		
+	</script>
+</head>
+
+<body>
+	<form name="entry" action="" method="post">
+		Country <input type="text" name="Cname">
+		<br><br><br>
+		<input type="button" name="b1" value="Print" onclick="display()">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ReadOnly Element in Javascript</title>
+	<script type="text/javascript">
+		function readonly()
+		{
+			document.forms.frm1.t1.readOnly=true;
+		}
+		function enter()
+		{
+			document.forms.frm1.t1.readOnly=false;
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		 Enter Your Name :<input type="text" name="t1"/><br><br>
+		<input type="button" name="b1" value="ReadOnly" onclick="readonly()"/>
+		<input type="button" name="b2" value="Write" onclick="enter()"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Events</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			alert("is selected");
+		}
+
+		function msg()
+		{
+			alert("Please enter value");
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Name=<input type="text" name="t1" value="" onselect="validate()">
+		<br><br>
+		Age=<input type="text" name="t2" value="" onblur="msg()">
+		
+	</form>
+
+</body>
+</html>

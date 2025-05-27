@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+</head>
+<body>
+    <select id="menu">
+        <option value="">Select an option</option>
+        <option value="option1">AJP</option>
+        <option value="option2">CSS</option>
+        <option value="option3">OSY</option>
+        <option value="option2">STE</option>
+        <option value="option3">SET</option>
+    </select>
+
+    <script>
+        var menu = document.getElementById("menu");
+        menu.addEventListener("change", function() {
+            var selectedOption = menu.options[menu.selectedIndex].value;
+            console.log("Selected option: " + selectedOption);
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Menu</title>
+</head>
+<body>
+    <div id="menu">
+        <button id="tab1" onclick="showTab(1)">Tab 1</button>
+        <button id="tab2" onclick="showTab(2)">Tab 2</button>
+        <button id="tab3" onclick="showTab(3)">Tab 3</button>
+    </div>
+    <div id="content">
+        <div id="tabContent1">
+            <h2>Tab 1 Content</h2>
+            <p>This is the content for Tab 1.</p>
+        </div>
+        <div id="tabContent2">
+            <h2>Tab 2 Content</h2>
+            <p>This is the content for Tab 2.</p>
+        </div>
+        <div id="tabContent3">
+            <h2>Tab 3 Content</h2>
+            <p>This is the content for Tab 3.</p>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabNumber) {
+            // Hide all tab contents
+            document.getElementById("tabContent1").style.display = "none";
+            document.getElementById("tabContent2").style.display = "none";
+            document.getElementById("tabContent3").style.display = "none";
+
+            // Show the selected tab content
+            document.getElementById("tabContent" + tabNumber).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Sliding Menu</title>
+     <style>
+         /* No CSS required */
+     </style>
+ </head>
+ <body>
+     <div id="menu" style="width: 200px; height: 100px; background-color: #ccc; position: absolute; left: -200px; transition: left 0.5s;">
+         <!-- Menu content goes here -->
+     </div>
+ 
+     <button onclick="slideMenu()">Toggle Menu</button>
+ 
+     <script>
+         function slideMenu() {
+             var menu = document.getElementById("menu");
+             var menuPosition = parseInt(menu.style.left);
+ 
+             if (menuPosition < 0) {
+                 menu.style.left = "0";
+             } else {
+                 menu.style.left = "-200px";
+             }
+         }
+     </script>
+ </body>
+ </html>
+ 

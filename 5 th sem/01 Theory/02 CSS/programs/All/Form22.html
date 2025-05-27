@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enable or Disable Element in Javascript</title>
+	<script type="text/javascript">
+		function disable()
+		{
+			document.forms.frm1.t1.disabled=true;
+		}
+		function enable()
+		{
+			document.forms.frm1.t1.disabled=false;
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		 Enter Your Name :<input type="text" name="t1"/><br><br>
+		<input type="button" name="b1" value="Disable" onclick="disable()"/>
+		<input type="button" name="b2" value="Enable" onclick="enable()"/>
+	</form>
+</body>
+</html>

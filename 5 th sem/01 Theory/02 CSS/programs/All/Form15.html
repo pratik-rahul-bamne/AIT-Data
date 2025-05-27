@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accessing form attributes</title>
+	<script type="text/javascript">
+		function display()
+		{
+			with(document.forms.entry)
+			{
+				alert("value="+elements[0].value+elements[1].value+elements[2].value)
+			}
+			
+		}
+		
+	</script>
+</head>
+
+
+<body>
+	<form name="entry" action="" method="post">
+		Country <input type="text" name="Cname">
+		<br>
+		State <input type="text" name="Sname">
+		<br>
+		City <input type="text" name="Ciname">
+		<br>
+		<input type="button" name="b1" value="Print" onclick="display()">
+	</form>
+
+</body>
+</html>

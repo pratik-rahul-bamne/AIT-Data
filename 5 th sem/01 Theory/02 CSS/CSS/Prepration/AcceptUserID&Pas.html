@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Accept User Name and Password from User</title>
+    </head>
+    <body>
+        <form name="login">
+            User Name: <input type="text" placeholder="Enter User Name" name="Uname">
+            Password: <input type="password" placeholder="Enter Password" name="Pwd">
+            <input type="button" value="submit" onclick="Display()">
+        </form>
+        <script lang="javascript" type="text/javascript">
+            function Display()
+            {
+                document.write("User Name: "+login.Uname.value+"<br/>"+"Password: "+login.Pwd.value);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<body>
+<form>
+ <select id="mySelect" size="8">
+ <option>OSY</option>
+ <option>DS</option>
+ <option>DBE</option>
+ <option>Micro</option>
+ <option>Project</option>
+ </select>
+</form>
+<br>
+<button type="button" onclick="myFunction()">Insert option</button>
+<script>
+function myFunction() {
+ var x = document.getElementById("mySelect");
+ var option = document.createElement("option");
+ option.text = prompt("Enter the Student Name=");
+ x.add(option);
+}
+</script>
+</body>
+</html>

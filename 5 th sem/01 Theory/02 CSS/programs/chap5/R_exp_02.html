@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+	<script type="text/javascript">
+		var p=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		function testMatch()
+		{
+			var str=textfield.value;
+			if (p.test(str))
+			 {
+			 		alert("Valid Email-id");
+			}
+			else
+			{
+			alert("Invalid Email-id");	
+			}
+		}
+
+
+			</script>
+</head>
+<body>
+<h3>Email Validation</h3>
+Enter the Email-id<input type="text" id="textfield"/>
+<input type="button" value="Check" onclick="testMatch();"/>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aadhar Card Validation</title>
+    <script>
+        function validateAadharCard() {
+            // Get the input values
+            var username = document.getElementById("username").value;
+            var aadharNumber = document.getElementById("aadharNumber").value;
+
+            // Regular expression for valid Aadhar card format (nnnn.nnnn.nnnn or nnnn-nnnn-nnnn)
+            var aadharRegex = /^\d{4}[.-]?\d{4}[.-]?\d{4}$/;
+
+            // Validate Aadhar card number
+            if (aadharRegex.test(aadharNumber)) {
+                alert("Hello, " + username + "! Aadhar Card Number is Valid.");
+            } else {
+                alert("Hello, " + username + "! Invalid Aadhar Card Number. Please enter a valid format.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Aadhar Card Validation</h2>
+    
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="aadharNumber">Aadhar Card Number:</label>
+        <input type="text" id="aadharNumber" required>
+
+        <button type="button" onclick="validateAadharCard()">Validate Aadhar Card</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<html>
+        <head>
+       <!-- <h1>FIND FACTORIAL OF ANY NUMBER</h1> -->
+         <h1> ARITHMETIC OPERATORS</h1>
+        <!-- <h1>FIBONACCI SERIES</h1> -->
+        <!-- <h1> CHECK WHETHER  THE NUMBER IS ARMSTRONG  </h1> -->
+        <!-- <H1> CHECK WHETHER THE NUMBER IS PALINDROME</H1> -->
+        <script>
+       
+           /*   function factorial(){
+                var f=1;
+                var num=prompt("enter the number...");
+                for(var i=1;i<=num;i++)
+                {
+                    f=f*i;
+                }
+                alert("FACTORIAL OF NUMBER "+num+" IS  "+f); 
+             } */
+
+
+             function add(){
+                var a=prompt("enter first number");
+                var b= prompt("enter second number");
+                document.write("ADDITION <BR><BR>");
+                    document.write("ADD = "+(a+b));
+                }
+             function sub(){
+                var a=prompt("enter first number");
+                var b= prompt("enter second number");
+                document.write("SUBTRACTION <BR><BR>");
+                    document.write("SUB = "+(a-b));
+             }
+             function mul(){
+                var a=prompt("enter first number");
+                var b= prompt("enter second number");
+                document.write("MULTIPLICATION <BR><BR>");
+                    document.write("MUL = "+(a*b));
+             }
+             function div(){
+                var a=prompt("enter first number");
+                var b= prompt("enter second number");
+                document.write("DIVISION <BR><BR>");
+                    document.write("DIV = "+(a/b));
+            } 
+
+
+            /* function FIB()
+            {
+                var i=0,j=1,k;
+            var a=prompt("enter the number for fibonacci series");
+            while(i<a)
+            {
+                document.write(i+"<br/>");
+                k=i+j;
+                i=j;
+                j=k;
+            }
+            } */
+
+
+          /*  function armstrong()
+           {
+            let number = prompt("Enter a number: ");
+            let sum = 0;
+            let temp = number;
+
+            while (temp > 0) {
+            let remainder = temp % 10;
+            sum += remainder ** 3;
+            temp = parseInt(temp / 10);
+           }
+
+          if (sum == number) {
+          document.write(number + " is an Armstrong number.");
+          } else {
+              document.write(number + " is not an Armstrong number.");
+          }
+
+           } */
+/* 
+           function PALINDROME(){
+            var reverse = 0;
+            var number=prompt("enter any number");
+            var temp = number;
+
+               while (temp > 0) {
+             var remainder = temp % 10;
+            reverse = reverse * 10 + remainder;
+             temp = Math.floor(temp / 10);
+           }
+
+            if (number === reverse) {
+            document.write(number + " is a palindrome number.");
+            } else {
+               document.write(number + " is not a palindrome number.");
+             }
+               } 
+ */
+            </script>
+        </head>
+    <body>
+        <!-- <button onclick="factorial()">FACTORIAL</button><br><br> -->
+       
+        <button onclick="add()">ADDITION</button><br>
+        <button onclick="sub()">SUBTRACTION</button><br>
+        <button onclick="mul()">MULTIPLICATION</button><br>
+        <button onclick="div()">DIVISION</button><br>
+        
+        <!-- <button onclick="FIB()">FIBONACCI SERIES</button><br> -->
+
+        <!-- <button onclick="armstrong()">armstrong</button><br> -->
+
+        <!-- <button onclick="PALINDROME()">PALINDROME</button> -->
+
+    </body>
+    
+</html>

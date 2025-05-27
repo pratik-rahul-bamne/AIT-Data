@@ -1,0 +1,26 @@
+<html>
+    <body>
+
+        <script type="text/javascript">
+            var a=new Array();
+            a[0]="Mango";
+            a[1]="Apple";
+            a[2]="Orange";
+    
+            document.write("<b>Original Length= "+a.length+"</br></b>");
+            for(var i=0;i<a.length;i++)
+            {
+                document.write(a[i]+"</br>");
+            }
+            document.write("</br>");
+            a.splice(3,0,"Strawberry","Pineapple");
+            document.write("<b>New Length= "+a.length+"</br></b>");
+            for(var i=0;i<a.length;i++)
+            {
+                document.write(a[i]+"</br>");
+            }
+
+           
+        </script>
+    </body>
+</html>

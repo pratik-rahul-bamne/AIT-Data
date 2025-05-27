@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Account Validation</title>
+    <script>
+        function validateAccount(userId, password) {
+            var isValid = false;
+
+            switch (userId) {
+                case "user1":
+                    isValid = (password === "pass123");
+                    break;
+                case "user2":
+                    isValid = (password === "password456");
+                    break;
+                case "user3":
+                    isValid = (password === "abc@123");
+                    break;
+                default:
+                    isValid = false;
+            }
+
+            return isValid;
+        }
+
+        function validateForm() {
+            var userId = document.getElementById("userId").value;
+            var password = document.getElementById("password").value;
+
+            if (validateAccount(userId, password)) {
+                alert("Login successful!");
+            } else {
+                alert("Invalid user ID or password. Please try again.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>User Account Validation</h2>
+    <form>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+
+        <button type="button" onclick="validateForm()">Login</button>
+    </form>
+</body>
+
+</html>

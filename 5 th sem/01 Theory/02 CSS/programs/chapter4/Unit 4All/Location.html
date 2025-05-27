@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Location</title>
+	<script type="text/javascript">
+		
+		function displayFunction()
+		{
+			
+			document.getElementById("para").innerHTML="The Protocol of the web page is :"+window.location.protocol;
+			/*document.getElementById("para").innerHTML="The web page is located at:"+window.location.pathname;
+			document.getElementById("para").innerHTML="The host of the web page is :"+window.location.hostname;*/
+		
+		}
+	</script>
+</head>
+<body>
+<p>Click to get The path of the Web Page</p>
+<input type="button" value="Get the Data " onclick="displayFunction()">
+<p id="para"></p>
+</body>
+</html>

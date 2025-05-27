@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            check Email id in login form
+        </title>
+        <script>
+            function check()
+            {
+                var email= document.getElementById("email").value
+                var regex=/^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([a-zA-Z]{2,5})$/
+                var res=regex.test(email)
+                if(!res)
+                {
+                    alert("please enter valid email id")
+                }
+                else{
+                    alert("thank you")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name=""myform>
+            Name: <input type="text" id="nm" name="Name">
+            <br><br>
+            Enter Email ID :<input type="text" id="email"/><br><br>
+            <input type="button" value=" Submit "onclick="check()">
+        </form>
+    </body>
+</html>

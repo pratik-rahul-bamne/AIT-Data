@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script>
+        function display1()
+        {
+            document.pic.src='file:download1.jpg';
+            document.getElementById('p').innerHTML="This first Image.";
+        }
+        function display2()
+        {
+            document.pic.src='file:download2.jpg';
+            document.getElementById('p').innerHTML="This second Image.";
+        }
+    </script>
+            </head>
+            <body>
+                
+                <a onmouseover="display1()"><h1>Dersert</h1></a>
+                <a onmouseout="display2()"><h1>Koala</h1></a>
+                <a>
+                    <img src='download3.jpg'>
+                </a>
+                <p id="p">Images</p>
+            
+            </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accessing Elements by ID</title>
+	<script type="text/javascript">
+		function check()
+		{
+			var i=document.getElementById("myText");
+			if(i.value!="")
+				alert("You Entered:"+i.value)
+				else
+				alert("please enter some text")	
+			
+		}
+		
+	</script>
+</head>
+<body>
+	<form name="entry" action="" method="post">
+		 <input type="text" id="myText">
+		<br><br><br>
+		<input type="button"  value="Checker" onclick="check()">
+	</form>
+
+</body>
+</html>

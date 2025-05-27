@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <script>
+ 	function createCookie()
+ 	{
+ 	var cookie_value = username.value;
+ 	document.cookie = "username="+cookie_value;
+ 	alert("Cookie is created");
+ 	document.write("Cookie value="+cookie_value)
+	}
+	function readCookie(cname)
+ 	{       
+        var cookies = document.cookie;
+	 	document.write("All stored Cookies:"+cookies);
+	 	var cookiearray=cookies.split(';');
+		 	for (var i = 0; i<cookiearray.length;i++)
+		 	 {
+		 		var cookie_pair=cookiearray[i];
+		 		var name_value_array=cookie_pair.split("=");
+		 		var name=name_value_array[0];
+		 		var value=name_value_array[1];
+		 		document.write("<br>Name is:"+name+"and value is:"+value);
+			}
+   }
+ </script>
+ </head>
+ <body>
+ Enter Username: <input type= "text" id="username"><br><br>
+ <input type= "button" value="Create cookie" onclick="createCookie()"/>
+ <br><br>
+ <p>Click the following button to get the Cookies:</p><br><br>
+ <input type= "button" value="Get cookie" onclick="readCookie("username")">
+ </body>
+ </html>

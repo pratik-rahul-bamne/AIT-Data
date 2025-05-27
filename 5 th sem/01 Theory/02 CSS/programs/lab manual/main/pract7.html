@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamically Chang Option List</title>
+	<script type="text/javascript">
+		function DisplayList(ElementValue)
+		{
+			with(document.forms.frm1)
+			{
+				if (ElementValue==1)
+				 {
+				 		List[0].text="WPD"
+				 		List[0].value=1
+				 		List[1].text="PIC"
+				 		List[1].value=2
+				 		List[2].text="MATHS"
+				 		List[2].value=3
+				}
+
+				if (ElementValue==2)
+				 {
+                    List[0].text="OOP"
+                    List[0].value=1
+                    List[1].text="DSU"
+                    List[1].value=2
+                    List[2].text="DBMS"
+                    List[2].value=3
+				}
+                if (ElementValue==3)
+				 {
+                    List[0].text="OSY"
+                    List[0].value=1
+                    List[1].text="CSS"
+                    List[1].value=2
+                    List[2].text="STE"
+                    List[2].value=3
+                    List[3].text="AJP"
+                    List[3].value=4
+                    List[4].text="EST"
+                    List[4].value=5
+				}
+
+			}
+			
+		}
+		
+	</script>
+</head>
+<body>
+	
+	<form name="frm1" action="" method="">
+		 <select name="List" size="6">
+            <option value="1">WPD
+		 	<option value="2">PIC
+		 	<option value="3">MATHS
+		 </select>
+		 <br>
+		 <input type="radio" name="subject" checked="true" value="1" onclick="DisplayList(this.value)">First Year
+		 
+		 <input type="radio" name="subject" value="2" onclick="DisplayList(this.value)">Second Year
+		 <br>
+         <input type="radio" name="subject" value="3" onclick="DisplayList(this.value)">Third Year
+         <br>
+		 <input type="submit" name="submit" value="Submit">
+	</form>
+
+</body>
+</html>

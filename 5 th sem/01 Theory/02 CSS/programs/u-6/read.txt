@@ -1,0 +1,16 @@
+import java.io.*;
+class create_file
+{
+	public static void main(String args[])
+	{
+		File f=new File("C:\\Users\\Admin\\fh\\lc.txt");
+		if(f.CreateNewFile())
+		{	
+			System.out.println("File Created Successfully");
+		}
+		else
+		{
+			System.out.println("File Already Exist");
+		}
+	}
+}

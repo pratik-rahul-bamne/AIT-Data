@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function read_cookie()
+	{
+        var cookie_val=document.cookie;
+        document.cookie("all atored cookies :"+cookie_val);
+        var cookiearray=cookie_val.split(";");
+          for(var i=0;i<cookiearray.length;i++)
+    {
+        var cookie_pair=cookiearray[i];
+        var name_value_array=cookie_pair.split("=");
+        var name=name_value_array[0];
+        var value=name_value_array[1];
+        document.write("<br> Name is:"+name+"and value is:" +value);
+    }
+	
+	}
+</script>
+</head>
+<body>
+    <p> Click the following button to get the cookie</p>
+    <input type ="button" value="get Cookie" onclick="read_cookie()">
+</body>
+	
+</body>
+</html>

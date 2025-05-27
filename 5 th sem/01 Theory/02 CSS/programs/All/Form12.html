@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Events</title>
+	<script type="text/javascript">
+		function over()
+		{
+			document.frm1.b1.value="Mouse Over";
+		}
+		function out()
+		{
+			document.frm1.b1.value="Mouse out";
+		}
+	</script>
+</head>
+<body>
+	<form name="frm1">
+		<input type="button" name="b1" value="Click" onmouseover="over()" onmouseout="out()">
+		
+	</form>
+
+</body>
+</html>

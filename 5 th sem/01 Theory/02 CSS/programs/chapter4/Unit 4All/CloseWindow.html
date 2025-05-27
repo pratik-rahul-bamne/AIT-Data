@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script>
+        var new_win;
+        function newwindow()
+        {   
+        new_win=window.open("","",'left=100,top=0,width=200,height=300');
+        }
+
+        function closeWindow()
+        {
+            new_win.close();
+        }
+    </script>
+    </head>
+    <body>
+        <p>Click to open a new Window </p>
+    <button onclick="newwindow()">Show New Window</button>
+
+        <p>Click to close new Window </p>
+        <button onclick="closeWindow">close new Window</button>
+    </body>
+</html>

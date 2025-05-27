@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script>
+        function menuitem()
+        {
+            var s=document.getElementById("select");
+            var str=s.options[s.selectedIndex].value;
+            alert("Selected Item is="+str);
+            if(str=="File")
+            {
+                window.open()
+            }
+
+        }
+        
+</script>
+<body>
+    <select id="select">
+        <option onclick="OpenWindow()">File</option>
+        <option>Insert</option>
+        <option>Delete</option>
+        <option>Remove</option>
+    </select>
+    <button onclick="menuitem()">show</button>
+    
+</body>
+</head>
+</html>

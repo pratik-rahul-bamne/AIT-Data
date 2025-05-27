@@ -1,0 +1,36 @@
+<label for="fruits">Fruits</label>
+<input type="radio" id="fruits" name="category" onclick="showFruits()">
+
+<label for="vegetables">Vegetables</label>
+<input type="radio" id="vegetables" name="category" onclick="showVegetables()">
+
+<select id="options">
+  <option value="apple" class="fruit">Apple</option>
+  <option value="banana" class="fruit">Banana</option>
+  <option value="carrot" class="vegetable">Carrot</option>
+  <option value="broccoli" class="vegetable">Broccoli</option>
+</select>
+
+<script>
+  function showFruits() {
+    var options = document.getElementById("options").getElementsByTagName("option");
+    for (var i = 0; i < options.length; i++) {
+      if (options[i].classList.contains("fruit")) {
+        options[i].style.display = "block";
+      } else {
+        options[i].style.display = "none";
+      }
+    }
+  }
+
+  function showVegetables() {
+    var options = document.getElementById("options").getElementsByTagName("option");
+    for (var i = 0; i < options.length; i++) {
+      if (options[i].classList.contains("vegetable")) {
+        options[i].style.display = "block";
+      } else {
+        options[i].style.display = "none";
+      }
+    }
+  }
+</script>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            var arr =new Array();
+            function pushItem()
+            {
+                var a =prompt("ENTER ANY NUMBER TO PUSH INTO ARRAY");
+                arr.push(a);
+                document.getElementById("disp").innerHTML=arr;
+            }
+            function unshiftItem()
+            {
+                var a =prompt("ENTER ANY NUMBER TO UNSHIFT FROM ARRAY");
+                arr.unshift(a);
+                document.getElementById("disp").innerHTML=arr;
+            }
+            function popItem()
+            {
+                var a =prompt("ENTER ANY NUMBER TO POP FROM ARRAY");
+                arr.pop(a);
+                document.getElementById("disp").innerHTML=arr;
+            }
+            function sortItem()
+            {
+                arr.sort();
+                document.getElementById("disp").innerHTML=arr;
+            }
+            function revItem()
+            {
+                arr.reverse();
+                document.getElementById("disp").innerHTML=arr;
+            }
+            function JoinItem()
+            {
+               var a= arr.join("*");
+                document.getElementById("disp").innerHTML=a;
+            }
+            function ConcatItem()
+            {
+               var a= arr.concat();
+                document.getElementById("disp").innerHTML=a;
+            }
+            function SPliceItem()
+            {
+               var a= arr.splice(2,5);
+                document.getElementById("disp").innerHTML=a;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="pushItem()">Push Item</button><br><br>
+        <button onclick="unshiftItem()">Unshift Item</button><br><br>
+        <button onclick="popItem()">Pop Item</button><br><br>
+        <button onclick="revItem()">Reverse Item</button><br><br>
+        <button onclick="sortItem()">Sort Item</button><br><br>
+        <button onclick="JoinItem()">Join Item</button><br><br>
+        <button onclick="ConcatItem()">Concat Item</button><br><br>
+        <button onclick="SPliceItem()">Splice Item</button>
+        <h3 id="disp"></h3>
+    </body>
+            
+</html>

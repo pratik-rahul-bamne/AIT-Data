@@ -1,0 +1,72 @@
+<!-- <html>
+<head>
+<title>Compute the average marks and grade</title>
+</head>
+<body>
+ <script>
+var students = [['Summit', 80], ['Kalpesh', 77], ['Amit', 88], ['Tejas', 93], 
+['Abhishek', 65]];
+ var Avgmarks = 0;
+ for (var i=0; i < students.length; i++) {
+ Avgmarks += students[i][1];
+ }
+ var avg = (Avgmarks/students.length);
+ document.write("Average grade: " + (Avgmarks)/students.length);
+ document.write("<br>");
+ if (avg < 60){
+    document.write("Grade : E");  } 
+ else if (avg < 70) {
+ document.write("Grade : D"); 
+ } 
+ else if (avg < 80) {
+ document.write("Grade : C"); 
+ } else if (avg < 90) {
+ document.write("Grade : B"); 
+ } else if (avg < 100) {
+ document.write("Grade : A"); 
+ }
+ </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Marks</title>
+    <script>
+        // Student data
+        var students = [
+            { name: "Amit", marks: 70 },
+            { name: "Sumit", marks: 78 },
+            { name: "Abhishek", marks: 71 }
+        ];
+
+        // Sort students based on marks in ascending order
+        students.sort(function (a, b) {
+            return a.marks - b.marks;
+        });
+
+        // Display sorted list
+        document.write("<h2>Student Marks in Ascending Order</h2>");
+        document.write("<ul>");
+        for (var i = 0; i < students.length; i++) {
+            document.write("<li>" + students[i].name + " - Marks: " + students[i].marks + "</li>");
+        }
+        document.write("</ul>");
+
+        // Calculate and display average performance
+        var totalMarks = 0;
+        for (var i = 0; i < students.length; i++) {
+            totalMarks += students[i].marks;
+        }
+        var average = totalMarks / students.length;
+
+        document.write("<h3>Average Performance of the Class: " + average.toFixed(2) + "</h3>");
+    </script>
+</head>
+
+<body>
+    <!-- The content will be written dynamically by the script -->
+</body>
+
+</html>

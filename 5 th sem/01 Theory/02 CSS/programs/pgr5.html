@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Array Program</title>
+    </head>
+   <body>
+    <script>
+       // var ar= new Array(10); //this array will store 10 values
+        /*myarray=new Array[10,20,30,40,50];
+         //array size =5
+         for(i=0;i<5;i++){
+            document.write(myarray[i]+"<br>");
+        }*/
+        mynewarray= new Array(6);
+        mynewarray[0]="sunday";
+        mynewarray[1]="monday";
+        mynewarray[2]="tuesday";
+        mynewarray[3]="wednesday";
+        mynewarray[4]="thursday";
+        mynewarray[5]="friday";
+        /*for(i=0;i<6;i++){   //for all array to print
+            document.write(mynewarray[i]+"<br>");
+        }*/
+        document.write(mynewarray[3]+"<br>");//to print only any one value or element from array 
+        // done by giving index number
+        var a= mynewarray.length;//find length of array
+        document.write(a);
+        mynewarray[mynewarray.length]="saturday";
+        for(i=0;i<=6;i++){   //for all array to print
+            document.write(mynewarray[i]+"<br>");
+        }
+        //how to convert an array to string:-1)concat(),2)join()
+        var str1=mynewarray.concat();
+        document.write(str1+"<br>");
+        var str2 =mynewarray.join("*");
+        document.write(str2+"<br>");
+    </script> 
+   </body>
+</html>     

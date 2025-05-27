@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function getpg(ch)
+            {
+                page=ch.options[ch.selectedIndex].value;
+                if(page!="")
+                {
+                    window.location=page;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <h3> Select Your Favourite Website:</h3>
+            <select name="MenuChoice" onchange="=getpg(this)">
+            <option value="https://www.google.com/">Google</option>
+            <option value="https://www.msbte.com/">MSBTE</option>
+            <option value="https://www.yahoo.com/">Yahoo</option>
+            </select>
+        </form>
+    </body>
+</html>

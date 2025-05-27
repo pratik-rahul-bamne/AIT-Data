@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Events And Key Press Event</title>
+	<script type="text/javascript">
+		/* function over()
+		{
+			document.frm1.b1.value="Mouse Over";
+		}
+		function out()
+		{
+			document.frm1.b1.value="Mouse out";
+		}
+	 */
+		/* function down()
+		{
+			document.frm2.b1.value="Key Down!";
+		}
+		function up()
+		{
+			document.frm2.b1.value="Key Up!";
+		} */
+
+    </script>
+</head>
+<body>
+     <div>
+	<form name="frm1">
+        <h2>ONMOUSEOVER AND ONMOUSEOUT</h2>
+		<input type="button" name="b1" value="Click Here" onmouseover="over()" onmouseout="out()">
+		 <br><br>
+
+    </div> 
+    </form> -->
+   <!--  <form name="frm2">
+        <div>
+            <h2>ONKEYUP AND ONKEYDOWN</h2>
+		<input type="text" name="t1" value="" onkeydown="down()" onkeyup="up()">
+		<br><br><br>
+		<input type="button" name="b1" value="Press Key">
+    </div>
+	</form>
+	</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Form Events</title>
+  <script>
+    function onBlurEvent() {
+      document.write("onBlur event occurred!");
+    }
+
+    function onChangeEvent() {
+      document.write("onChange event occurred!");
+    }
+
+    function onFocusEvent() {
+      document.write("onFocus event occurred!");
+    }
+
+    function onSelectEvent() {
+      document.write("onSelect event occurred!");
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" onblur="onBlurEvent()" onchange="onChangeEvent()" onfocus="onFocusEvent()" onselect="onSelectEvent()">
+  </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Events Program</title>
+</head>
+<body>
+
+<script>
+  // Open a new window
+  function openWindow() {
+    window.open("https://www.example.com");
+  }
+
+  // Close the current window
+  function closeWindow() {
+    window.close();
+  }
+
+  // Execute when the window is loaded
+  function windowLoaded() {
+    alert("Window loaded!");
+  }
+
+  // Execute when the window is resized
+  function windowResized() {
+    alert("Window resized!");
+  }
+
+  // Execute when the window is scrolled
+  function windowScrolled() {
+    alert("Window scrolled!");
+  }
+</script>
+
+<button onclick="openWindow()">Open New Window</button>
+<button onclick="closeWindow()">Close Window</button>
+
+<script>
+  // Attach event listeners to window events
+  window.onload = windowLoaded;
+  window.onresize = windowResized;
+  window.onscroll = windowScrolled;
+</script>
+
+</body>
+</html>
+

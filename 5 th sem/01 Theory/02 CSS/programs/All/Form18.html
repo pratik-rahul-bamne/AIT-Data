@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamically Changing Element Attributes</title>
+	<script type="text/javascript">
+		function change(Element)
+		{
+			Element.style.color='blue'
+			Element.style.backgroundColor='silver'
+		}
+		
+	</script>
+</head>
+<body>
+	<form name="entry" action="" method="">
+		 Country:<input type="text" name="Cname" value="Australia" onchange="change(this)"/><br>
+		State:<input type="text" name="Sname" value="Queensland" onchange="change(this)"/><br>
+		<input type="button" name="b2" value="Send">
+	</form>
+
+</body>
+</html>

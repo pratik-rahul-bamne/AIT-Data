@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script>
+        function show()
+        {
+            adhar = document.getElementById("txtaadhar").value;
+            var adharcard =/d{12}/;
+            document.write(adharcard);
+            var adharsixteendigit = /^\d{16}$/;
+            if (adhar != '') 
+            {
+                if (!adhar.match(adharcard))
+                {
+                    alert(" Aadhar Number");
+                    return false;
+                }
+            }
+//if (adhar != '')
+{
+    if(!adhar.match(adharsixteendigit))
+    {
+        alert("Invalid Aadhar Number");
+        return false;
+    }
+}
+}
+</script>
+</head>
+<body>
+    Enter the Adhar Card No.<input type="text" id="txtaadhar"><br>
+    <button onclick="show()">Adhar Card</button>
+</body>
+</html

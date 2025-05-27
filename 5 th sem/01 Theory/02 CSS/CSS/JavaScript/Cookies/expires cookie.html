@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Cookies</title>
+    </head>
+    <body>
+        <input type="button" value="setCookie" onclick="setCookie()">
+        <input type="button" value="getCookie" onclick="getCookie()">
+        <script>
+            function setCookie()
+            {
+                document.cookie="Username=FF;expires=sun,25 Dec 2022 11:00:00 UTC";
+                document.cookie="username=FF;max-age=60*60";
+                document.cookie="username=FF;expires=sun,25 Dec 2022 11:00:00 UTC;path=/;"
+                domain=google.com
+            }
+        </script>      
+    </body>
+</html>

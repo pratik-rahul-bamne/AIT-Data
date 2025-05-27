@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Quick and Dirty Rollovers</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+    
+    function mouseOn()
+    {
+      document.image1.src = "download2.jpg";
+    }
+    function mouseOff()
+    {
+      document.image1.src = "download3.jpg";
+    }
+    </script>
+</head>
+<body>
+  <a href="#" onmouseover="mouseOn()" onmouseout="mouseOff()">
+    <img name="image1" id="image1" src="download1.jpg" border="0" width="90" height="90" alt="rollover" />
+  </a>
+</body>
+</html>

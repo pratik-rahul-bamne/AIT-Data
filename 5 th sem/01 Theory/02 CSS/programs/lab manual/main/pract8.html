@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Intrinsic Function </title>
+
+    </head>
+    <body>
+        <!-- <form name="frm1" method="post">
+            <center>
+            <p>
+                Name: <input type="text" name="t1"/><br>
+            <br>
+                Age:  <input type="text" name="t2"/><br>
+                <br>
+                <img src="submit.png" height="40" width="50" onclick="javascript:document.forms.frm1.submit()">
+                <img src="reset.png" height="40" width="50" onclick="javascript:document.forms.frm1.reset()">
+
+            </p>
+            </center>
+        </form> -->
+        <script>
+        function asNAN() {
+            return isNaN("Hello");
+          }
+          
+          function evalExample() {
+            return eval("2 + 2");
+          }
+          
+          function numberExample() {
+            return Number("42");
+          }
+          
+          function stringExample() {
+            return String(42);
+          }
+          
+          function parseIntExample() {
+            return parseInt("10");
+          }
+          
+          function parseFloatExample() {
+            return parseFloat("3.14");
+          }
+          
+          document.write(asNAN()+"<br>");
+          document.write(evalExample()+"<br>");
+          document.write(numberExample()+"<br>");
+          document.write(stringExample()+"<br>");
+          document.write(parseIntExample()+"<br>");
+          document.write(parseFloatExample());
+        </script> 
+    </body>
+</html> 

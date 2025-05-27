@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>EVENT</title>
+</head>
+<body>
+    <div id="s1">
+        <button id="c1">I am Child Node</button>
+    </div>
+    <script>		
+        var parent=document.querySelector('#s1');
+        var Child=document.querySelector('#c1');
+
+        parent.addEventListener('click',function(){
+            document.write("Parent is invoked");
+        },true);
+        Child.addEventListener('click',function(){
+            document.write("Child is invoked");
+        },true);
+    </script>
+
+</body>
+</html>

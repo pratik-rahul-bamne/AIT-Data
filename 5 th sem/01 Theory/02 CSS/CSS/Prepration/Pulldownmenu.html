@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Pull-Down Menu
+        </title>
+        <script lang="javascript" type="text/javascript">
+            function getselectedItem()
+            {
+                var ele=document.getElementById("Select");
+                var str=ele.options[ele.selectedIndex].value;
+                alert("The selected Value is :"+str );
+            }
+        </script>
+    </head>
+    <body>
+        <select id="Select">
+            <option>
+                S
+            </option>
+            <option>
+                u 
+            </option>
+            <option>
+                s 
+            </option>
+            <option>
+                h 
+            </option>
+            <option>
+                a 
+            </option>
+            <option>
+                n 
+            </option>
+            <option>
+                t 
+            </option>
+        </select>
+        <button onclick="getselectedItem()">Get Started</button>
+    </body>
+</html>
