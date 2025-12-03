@@ -1,0 +1,14 @@
+1) Diff Multi programming - tasking and linux - windows.
+2) Real-time os.
+3) System calls.
+4) process commands [ PS ,WAIT ,SLEEP , EXIT, KILL].
+5) Process states and pcb.
+6) IPC and Thread models.
+7) Deadlock related.
+8) Partitioning .
+9) File attributes.
+10) Directory Structure. 
+
+Practice algorithms..
+
+ FCFS,SJF,RR,LRU,OPTIMAL.
