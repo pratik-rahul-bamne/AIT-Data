@@ -1,0 +1,46 @@
+nit 1: Basics of Software Testing and Testing Methods
+January 09, 2021
+MSBTE Questions
+
+
+
+Marks 2
+
+Define static and dynamic testing.
+
+Define role of testing.
+
+Define Defect
+
+Define Bug,Error,Fault and Failure.
+
+
+
+
+
+Marks 4 
+
+1 What is software testing? State objectives of software testing 
+
+
+
+List all skills of software tester.
+
+Define role of testing.
+
+Enlist objectives of software testing.
+
+Explain the terms Mistake, Error, Defect, Bug, Fault and Failure in relation with software testing.
+
+Enlist different techniques for finding defects and describe any one technique with an example
+
+Describe V-model with labeled diagram. State it’s any two advantages and disadvantages. Also write where it is applicable.
+
+Explain quality assurance and quality control
+
+Draw classification of White Box testing. Explain any one type of White Box testing in detail.
+
+What is Black Box testing? List any four techniques of Black Box testing
+
+Describe the use of decision table in black box testing with the help of suitable example.
+
