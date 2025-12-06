@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert String Within a String</title>
+  </head>
+  <body>
+    <h1>Insert String Within a String</h1>
+    <p>Original String: <span id="originalString">Hello World!</span></p>
+ 
+    <p>New String: <span id="newString"></span></p>
+    <script>
+      function insertString(original, string, position) {
+        if (position == null || position == undefined) {
+          position = 1;
+        }
+        return original.slice(0, position) + string + original.slice(position);
+      }
+      var originalString = document.getElementById("originalString").innerHTML;
+      var newString = insertString(originalString, "beautiful ", 6);
+      document.getElementById("newString").innerHTML = newString;
+    </script>
+  </body>
+</html>
