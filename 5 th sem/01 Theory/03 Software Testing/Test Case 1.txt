@@ -1,0 +1,95 @@
+Test Case 1:
+Objective: To verify that the view option is available in WordPad application.
+Steps:
+Open WordPad application.
+Click on the "View" menu.
+Verify that the "View" menu contains the following options:
+Zoom
+Ruler
+Gridlines
+Status Bar
+Thumbnails
+Outline
+Backstage View
+Expected Result: The "View" menu should contain the following options:
+Zoom
+Ruler
+Gridlines
+Status Bar
+Thumbnails
+Outline
+Backstage View
+Actual Result: The "View" menu contains the following options:
+Zoom
+Ruler
+Gridlines
+Status Bar
+Thumbnails
+Outline
+Backstage View
+Status: Passed
+Test Case 2:
+Objective:
+To verify that the zoom option in the view menu of WordPad application works as expected.
+Steps:
+Open WordPad application.
+Click on the "View" menu.
+Select the "Zoom" option.
+Select the "Zoom In" option.
+Verify that the text in the document zooms in.
+Select the "Zoom Out" option.
+Verify that the text in the document zooms out.
+Expected Result:
+The text in the document should zoom in and out when the "Zoom In" and "Zoom Out" options are selected, respectively.
+Actual Result:
+The text in the document zooms in and out when the "Zoom In" and "Zoom Out" options are selected, respectively.
+Status:
+Passed
+Test Case 3:
+Objective:
+To verify that the ruler option in the view menu of WordPad application works as expected.
+Steps:
+Open WordPad application.
+Click on the "View" menu.
+Select the "Ruler" option.
+Verify that the ruler appears at the top of the document window.
+Drag the leftmost tab on the ruler to the right.
+Verify that the text in the document moves to the right.
+Drag the rightmost tab on the ruler to the left.
+Verify that the text in the document moves to the left.
+Expected Result:
+The text in the document should move to the right or left when the leftmost or rightmost tab on the ruler is dragged, respectively.
+Actual Result:
+The text in the document moves to the right or left when the leftmost or rightmost tab on the ruler is dragged, respectively.
+Status:
+Passed
+Test Case 4:
+Objective:
+To verify that the gridlines option in the view menu of WordPad application works as expected.
+Steps:
+Open WordPad application.
+Click on the "View" menu.
+Select the "Gridlines" option.
+Verify that gridlines appear in the document window.
+Change the gridline spacing by selecting the "Gridline Spacing" option from the "View" menu.
+Verify that the gridlines change to the new spacing.
+Expected Result:
+The gridlines should appear in the document window and should change to the new spacing when the "Gridline Spacing" option is selected.
+Actual Result:
+The gridlines appear in the document window and change to the new spacing when the "Gridline Spacing" option is selected.
+Status:
+Passed
+Test Case 5:
+Objective:
+To verify that the status bar option in the view menu of WordPad application works as expected.
+Steps:
+Open WordPad application.
+Click on the "View" menu.
+Select the "Status Bar" option.
+Verify that the status bar appears at the bottom of the document window.
+Type some text in the document.
+Verify that the status bar displays the current position of the cursor, the number of words in the document, and the selection length.
+Expected Result:
+The status bar should appear at the bottom of the document window and should display the current position of the cursor, the number of words in the document, and the selection length.
+Actual Result:
+The status bar appears at the bottom of the document window and displays the current position of the cursor, the number of words in
